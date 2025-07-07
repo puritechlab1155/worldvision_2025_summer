@@ -513,11 +513,6 @@
 
 
 
-@media (max-width: 1280px) {
-
-}
-
-
 @media (max-width: 767px) {
     /* 메인 페이지 */
     #container .main-visual .main-posit {
@@ -678,6 +673,10 @@
 
 
 
+
+
+/* 캠페인.html, 새소식.html  */
+
 #container .news {
     margin: 0 auto;
     text-align: center;
@@ -702,13 +701,11 @@
     max-width: clamp(20px, 5vw, 40px);
     margin: 0 auto 10px;
 }
-
 #container .news .ticket-image {
     max-width: 300px;
     margin: 0 auto;
     width: 60%;
 }
-
 #container .news table {
     margin: 30px auto 0;
     max-width: 450px;
@@ -718,17 +715,14 @@
 #container .news tr:first-of-type{
     border-top: 1px solid #333;
 }
-
 #container .news td {
     padding: 12px 8px;
     text-align: left;
     border-bottom: 1px solid #333;
 }
-
 #container .news td:last-child {
     text-align: right;
 }
-
 #container .news .steps{
     display: flex;
     justify-content: center; 
@@ -757,25 +751,21 @@
     box-sizing: border-box;
     text-align: center;
 }    
-
 #container .news .step-container {
     width: 160px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 #container .news .step-container.one {
     margin-bottom: 50px;
 }
-
 #container .news .step-title {
     margin-bottom: 8px;
     font-size: 16px;
     font-weight: bold;
     color: #000;
 }
-
 #container .news .step-desc {
     font-size: clamp(12px, 1vw, 15px);
     color: #000000;
@@ -786,8 +776,6 @@
 #container .news .section.seven {
     margin-bottom: 100px;
 }
-
-
 #container .campaign {
     margin: 0 auto;
     text-align: center;
@@ -811,19 +799,6 @@
     margin: 80px auto 30px;
 }
 
-/* #container .campaign .section {
-    border-top: 2px dashed transparent;
-    border-bottom: 2px dashed transparent;
-    border-image: repeating-linear-gradient(
-        to right,
-        #FF6B00 0 10px,
-        transparent 10px 20px
-    ) 100 stretch;
-    padding-top: clamp(40px, 8vw, 100px);
-    margin-left: calc(-50vw + 50%);
-    margin-bottom: 10px;
-    width: 100vw;
-} */
 #container .campaign .section {
     padding-top: clamp(40px, 8vw, 100px);
     padding-bottom: clamp(50px, 8vw, 100px);
@@ -856,13 +831,11 @@
     margin: 0 auto;
 }
 #container .campaign .img-double img{
-    flex: 1 1 0;
-    max-width: calc(50% - 10px); /* gap 고려 */
+    width: calc((100% - 20px) / 2);
     height: auto;
     display: block;
-    object-fit: cover; /* 선택: 비율 유지하며 꽉 채우기 */
+    object-fit: cover; 
 }
-
 #container .campaign .img {
     max-width: 1240px;
     margin: 0 auto;
@@ -1001,15 +974,6 @@
     #container .campaign .title-wrap{
         padding: 20px 0 30px;
     }
-    /* #container .campaign .section {
-        border-top:  2px dashed transparent;
-        border-image: repeating-linear-gradient(
-            to right,
-            #FF6B00 0 3px,
-            transparent 2px 6px
-        ) 100 stretch;
-    } */
-
     #container .campaign .semi-wrap {
         gap: 10px;
     }
