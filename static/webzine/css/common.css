@@ -1,14 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
 
-/* @font-face {
-  font-family: 'Chilgok'; 
-  src: url('../font/Chilgok_lws.otf') format('opentype');
-  font-weight: normal;
-  font-style: normal;
-} */
-
-
 @font-face {
   font-family: 'HakgyoansimBunpilR';
   src: url('../font/HakgyoansimBunpilR.otf') format('opentype');
@@ -24,10 +16,6 @@
   font-style: normal;
 }
 
-
-/* .f-chilgok {
-  font-family: 'Chilgok', sans-serif;
-} */
 .bunpil {
   font-family: 'HakgyoansimBunpilR', sans-serif;
 }
@@ -65,9 +53,6 @@ html, body {
     /* overflow: hidden; */
 }
 
-.f-chilgok {
-  font-family: 'Chilgok', sans-serif;
-}
 /* 이미지와 비디오의 최대 크기를 부모 요소에 맞추도록 설정video */
 img {
     max-width: 100%;
@@ -270,6 +255,51 @@ a {
   display: inline-block;
   width: auto; /* 혹시 강제 지정된 경우 방지 */
 }
+/* 공통버튼 2 */
+.btn02_area {
+  flex-direction: column;
+  gap: 1vw;
+}
+.btn02_area .btn02-item {
+  /* width: 240px; */
+  /* max-height: 53px; */
+  padding: 12px 15px;
+  line-height: 1.5;
+  text-align: center;
+  background: #fff;
+  border: 1.5px solid #FF6B00;
+  color: #FF6B00;
+  border-radius: 9999px;
+  transition: color 0.1s linear, background-color 0.1s linear;
+  cursor: pointer;
+  position: relative;
+}
+.btn02_area .btn02-item a {
+  width: 100%;
+  display: block;
+  font-size: clamp(16px, 1.5vw, 24px);
+}
+.btn02_area .btn02-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #FF6B00;
+  border-radius: 9999px;
+  bottom: -0.3em;
+  right: -0.2em;
+  box-shadow: 2 0px 0px #FF6B00;
+  z-index: -1;
+}
+.btn02_area .btn02-item:hover {
+  background: #FF6B00;
+  color: #fff;
+}
+.btn02_area .btn02-item:hover::before {
+  background: #fff;
+  border: 1px solid #FF6B00;
+} /* 여기까지 버튼 02 */
 
 
 /* 20241121 util 메뉴 로고 삭제 및 로그인 영역 위치 조정 */
@@ -287,6 +317,14 @@ a {
 }
 
 @media only all and (max-width: 767px) {
+  .btn02_area .btn02-item {
+    padding: 5px;
+  }
+  .btn02_area .btn02-item a {
+    font-size: clamp(12px, 1.5vw, 26px);
+  }
+
+
   #header.microsite {
       padding: 0;
   }
