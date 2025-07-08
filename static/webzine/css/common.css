@@ -229,7 +229,7 @@ img {
 .btn02_area .btn02-item a {
   width: 100%;
   display: block;
-  font-size: clamp(16px, 1.5vw, 24px);
+  font-size: clamp(16px, 2vw, 30px);
 }
 .btn02_area .btn02-item::before {
   content: "";
