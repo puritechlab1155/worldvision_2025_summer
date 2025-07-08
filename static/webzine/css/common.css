@@ -138,7 +138,7 @@ img {
   margin-top: 70px;
 }
 .mt-8 {
-  margin-top: 80px;
+  margin-top: clamp(50px, 5vw, 80px);
 }
 .mt-9 {
   margin-top: 90px;
@@ -161,6 +161,7 @@ img {
 .mb-1 {
   margin-bottom: 10px;
 }
+
 
 .mob-br{
   display: none;
@@ -262,12 +263,12 @@ img {
 
 /* 20241121 util 메뉴 로고 삭제 및 로그인 영역 위치 조정 */
 #header.microsite .header_wrap {
-    height: 32px
+    height: 32px;
 }
 
 .microsite .header_wrap .header_logo,
 .microsite .header_wrap .header_logo img {
-    display: none
+    display: none;
 }
 
 .microsite .header_util .my_info .my_lyr {
@@ -276,21 +277,21 @@ img {
 
 @media only all and (max-width: 767px) {
     #header.microsite {
-        padding: 0
+        padding: 0;
     }
 
     #header.microsite .header_wrap {
         height: 0;
-        padding: 0
+        padding: 0;
     }
 
     #header.microsite .header_wrap .header_util .my_info {
         top: 22px;
-        right: 20px
+        right: 20px;
     }
 
     .campaign #header .header_wrap .menu {
-        margin-right: 40px
+        margin-right: 33px;
     }
 
     .microsite .btn_myinfo {
@@ -302,7 +303,7 @@ img {
     }
 
     .microsite .header_util .my_info .my_lyr {
-        right: -20px
+        right: -20px;
     }
 }
 

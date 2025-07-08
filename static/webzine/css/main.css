@@ -9,7 +9,7 @@
 
 .campaign #header .header_wrap { color: #fff; padding: 0; height: 79px; display: flex; justify-content: space-between; align-items: center; }
 .campaign #header .header_wrap .logo {  margin-right: auto; }
-.campaign #header .header_wrap .vol_info { font-weight: 500; font-size: 18px; line-height: 28px;  align-items: center; margin-right: 13px;}
+.campaign #header .header_wrap .vol_info { font-weight: 500; font-size: 18px; line-height: 28px;  align-items: center; margin-right: 8px;}
 .campaign #header .header_wrap .vol_info.mobile_display { display: none;}
 /* .campaign #header .header_wrap .menu { margin: 0; } */
 .campaign #header .header_wrap .menu button {  width: 81px; height: 40px; border: 2px solid #fff; border-radius: 355px; padding: 0.2rem; text-align: center; color: #fff; font-weight: 700; font-size: 18px; line-height: 28px; cursor: pointer; }
@@ -498,7 +498,7 @@
     align-items: center;
 }
 #container .arrow-title {
-    font-size: 19px;
+    font-size: clamp(12px, 2vw, 20px);
     color: #F56400;
     animation-delay: 1s;
 }
@@ -526,9 +526,12 @@
     margin: 0 auto;
     text-align: center;
 }
+#container .news .titleB{
+    font-size: clamp(20px, 5vw ,32px);
+}
 #container .news .title{
     font-size: clamp(20px, 5vw ,32px);
-    font-weight: 700;
+    font-weight: 400;
 }
 #container .news .subtitle{
     font-size: clamp(20px, 5vw ,32px);
@@ -558,13 +561,13 @@
     font-size: 14px;
 }
 #container .news tr:first-of-type{
-    border-top: 1px solid #333;
+    border-top: 2px solid #333;
 }
 #container .news td {
     font-size: clamp(15px, 2vw, 18px);
     padding: 12px 8px;
     text-align: left;
-    border-bottom: 1px solid #333;
+    border-bottom: 2px solid #333;
 }
 #container .news td:last-child {
     text-align: right;
@@ -744,7 +747,7 @@
 }
 
 #container .campaign .description {
-    font-size: clamp(12px, 2vw, 18px);
+    font-size: clamp(15px, 2vw, 18px);
     max-width: 1080px;
     text-align: justify;
     margin: 0 auto;
