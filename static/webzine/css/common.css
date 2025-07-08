@@ -229,7 +229,8 @@ img {
 .btn02_area .btn02-item a {
   width: 100%;
   display: block;
-  font-size: clamp(16px, 2vw, 30px);
+  font-size: clamp(12px, 2vw, 30px);
+  white-space: nowrap;
 }
 .btn02_area .btn02-item::before {
   content: "";
@@ -255,11 +256,6 @@ img {
 @media only all and (max-width: 767px) {
   .btn02_area .btn02-item {
     padding: 5px;
-  }
-  .btn02_area .btn02-item a {
-    width: 100%;
-    display: block;
-    font-size: clamp(16px, 2vw, 30px);
   }
 }/* 여기까지 버튼 02 */
 
