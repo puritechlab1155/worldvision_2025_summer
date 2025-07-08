@@ -1,5 +1,6 @@
+/* font */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
-
+/* font-family: "Noto Sans KR", sans-serif; */
 
 @font-face {
   font-family: 'HakgyoansimBunpilR';
@@ -53,6 +54,7 @@ html, body {
     /* overflow: hidden; */
 }
 
+
 /* 이미지와 비디오의 최대 크기를 부모 요소에 맞추도록 설정video */
 img {
     max-width: 100%;
@@ -69,37 +71,20 @@ img {
     user-drag: none;
     oncontextmenu: return false;
 }
-
-/* 링크 기본 스타일 리셋 */
-a {
-  text-decoration: none;
-  color: inherit; /* 링크 기본 색상을 텍스트 색상으로 */
-}
-
-#container picture {
-  display: block;
-}
-
-/* 처음에는 완전히 투명하고 아래쪽에 위치 */
-.animate-on-scroll {
-  opacity: 0;
-  transform: translateY(50px); /* 50px 아래에 위치 */
-  transition: opacity 1s linear, transform linear;
-}
-
-/* 스크롤될 때 실행 (JS에서 클래스 추가) */
-.animate-on-scroll.animate__animated {
-  opacity: 1;
-  transform: translateY(0); /* 원래 위치로 이동 */
-}
-
-.pc_display { display: block; }
-.mobile_display { display: none; }
-
-  @media only all and (max-width: 767px) {
-      .pc_display { display: none; }
-      .mobile_display { display: block; }
+  
+  /* 링크 기본 스타일 리셋 */
+  a {
+    text-decoration: none;
+    color: inherit; /* 링크 기본 색상을 텍스트 색상으로 */
   }
+
+  /* .pc_display { display: block; }
+  .mobile_display { display: none; }
+
+    @media only all and (max-width: 767px) {
+        .pc_display { display: none; }
+        .mobile_display { display: block; }
+    } */
 
 
 .inner {
@@ -129,8 +114,6 @@ a {
 .fw-9 {
   font-weight: 900;
 }
-
-  
 
 /* margin */
 .mt-1 {
@@ -178,72 +161,41 @@ a {
 .mb-1 {
   margin-bottom: 10px;
 }
+
 .mob-br{
   display: none;
 }
-
+@media (max-width: 767px) {
+  .mob-br{
+    display: block;
+  }
+}
+/* .popup-image {
+  opacity: 0;
+} */
 .dashed-line {
   width: 100vw;
   height: 2px;
   margin-left: calc(-50vw + 50%);
   background-image: repeating-linear-gradient(
-      to right,
-      #FF6B00 0 10px,
-      transparent 10px 20px
+    to right,
+    #FF6B00 0 10px,
+    transparent 10px 20px
   );
   background-repeat: repeat-x;
   background-size: auto 2px;
   background-position: center;
 }
-
-@media (max-width: 767px) {
-
-  .mob-br{
-    display: block;
-  }
-}
-
-  /* .flex-row {
-    display: flex;
-    letter-spacing: -2%;
-  }
-  .flex-row1 {
-    display: flex;
-    letter-spacing: -2%;
-  }
-  .flex-row2 {
-    display: flex;
-    letter-spacing: -2%;
-  }
-  .flex-row3 {
-    display: flex;
-    letter-spacing: -2%;
-  } */
-
-  /* .popup-image {
-    opacity: 0;
-  } */
-
-  /* .flex-column {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .flex-box {
-    display: flex;
-  } */
-  
 .tc {
   text-align: center;
 }
 .tr {
   text-align: right;
 }
-
 .txtPoint{
   color: #FF6B00;
 }
-
+/* 공통버튼 1: 서브 */
 .btn01{
   font-family: 'HakgyoansimBunpilR';
   color: #FFFFFF;
@@ -255,7 +207,7 @@ a {
   display: inline-block;
   width: auto; /* 혹시 강제 지정된 경우 방지 */
 }
-/* 공통버튼 2 */
+/* 공통버튼 2: 메인 */
 .btn02_area {
   flex-direction: column;
   gap: 1vw;
@@ -299,62 +251,64 @@ a {
 .btn02_area .btn02-item:hover::before {
   background: #fff;
   border: 1px solid #FF6B00;
-} /* 여기까지 버튼 02 */
-
-
-/* 20241121 util 메뉴 로고 삭제 및 로그인 영역 위치 조정 */
-#header.microsite .header_wrap {
-  height: 32px
-}
-
-.microsite .header_wrap .header_logo,
-.microsite .header_wrap .header_logo img {
-  display: none
-}
-
-.microsite .header_util .my_info .my_lyr {
-  word-break: keep-all;
-}
-
+} 
 @media only all and (max-width: 767px) {
   .btn02_area .btn02-item {
     padding: 5px;
   }
   .btn02_area .btn02-item a {
-    font-size: clamp(12px, 1.5vw, 26px);
+    width: 100%;
+    display: block;
+    font-size: clamp(16px, 2vw, 30px);
   }
+}/* 여기까지 버튼 02 */
 
 
-  #header.microsite {
-      padding: 0;
-  }
+/* 20241121 util 메뉴 로고 삭제 및 로그인 영역 위치 조정 */
+#header.microsite .header_wrap {
+    height: 32px
+}
 
-  #header.microsite .header_wrap {
-      height: 0;
-      padding: 0
-  }
+.microsite .header_wrap .header_logo,
+.microsite .header_wrap .header_logo img {
+    display: none
+}
 
-  #header.microsite .header_wrap .header_util .my_info {
-      top: 22px;
-      right: 20px
-  }
+.microsite .header_util .my_info .my_lyr {
+    word-break: keep-all;
+}
 
-  .campaign #header .header_wrap .menu {
-      margin-right: 40px
-  }
+@media only all and (max-width: 767px) {
+    #header.microsite {
+        padding: 0
+    }
 
-  .microsite .btn_myinfo {
-      border-color: #fff;
-      border-radius: 8px;
-      background-image: url('images/common/angle-down.svg') no-repeat;
-      -webkit-background-size: 40%;
-      background-size: 40%;
-  }
+    #header.microsite .header_wrap {
+        height: 0;
+        padding: 0
+    }
 
-  .microsite .header_util .my_info .my_lyr {
-      right: -20px
-  }
+    #header.microsite .header_wrap .header_util .my_info {
+        top: 22px;
+        right: 20px
+    }
 
+    .campaign #header .header_wrap .menu {
+        margin-right: 40px
+    }
+
+    .microsite .btn_myinfo {
+        border-color: #fff;
+        border-radius: 8px;
+        background-image: url('images/common/angle-down.svg') no-repeat;
+        -webkit-background-size: 40%;
+        background-size: 40%;
+    }
+
+    .microsite .header_util .my_info .my_lyr {
+        right: -20px
+    }
 }
 
 /* //20241121 util 메뉴 로고 삭제 및 로그인 영역 위치 조정 */
+  
