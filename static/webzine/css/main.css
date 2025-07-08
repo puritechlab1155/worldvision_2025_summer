@@ -954,3 +954,6 @@
     display: flex;
     justify-content: space-around;
 }
+.flex-smallMark .point-box {
+    padding-top: 0;
+}
