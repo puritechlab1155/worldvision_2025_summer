@@ -57,7 +57,7 @@
     <!-- css 입력 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <!-- <link rel="stylesheet" href="css/main.css" type="text/css"> -->
-    <link rel="stylesheet" href="css/main1.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
 
     <!-- js 입력 -->
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script> -->
@@ -325,46 +325,48 @@
             <button class="scroll-button" onclick="scrollToTop()" id="upPage"><img src="images/common/topButton.png" alt="월드비전 웹진 상단으로 이동하기"></button>
         </div> <!-- //page ctrl -->
 
-        <!-- footer -->
-        <div data-include-path="https://gb.worldvision.or.kr/resources/wvFrt/project/template/inc/footer.html"></div>
-        <!-- //footer -->
-
-        <script>
-            window.addEventListener('load', function () {
-                var allElements = document.getElementsByTagName('*');
-                Array.prototype.forEach.call(allElements, function (el) {
-                    var includePath = el.dataset.includePath;
-                    if (includePath) {
-                        var xhttp = new XMLHttpRequest();
-                        xhttp.onreadystatechange = function () {
-                            if (this.readyState == 4 && this.status == 200) {
-                                el.outerHTML = this.responseText;
-                            }
-                        };
-                        xhttp.open('GET', includePath, true);
-                        xhttp.send();
-                    }
-                });
-            }); 
-
-            //  인도적 지원사업
-            function forceNavigate(event) {
-                event.preventDefault();
-
-                const isMobile = window.innerWidth <= 767;
-                const targetId = isMobile ? 'section031-mobile' : 'section031';
-                
-                // 다른 페이지로 이동하면서 해시 추가
-                window.location.href = `intBusiness2.html#${targetId}`;
-            }
-        </script>
-        
 
         <!-- 플로팅 버튼 -->
         <div id="floating">
         </div>
         <!-- //플로팅 버튼 -->
     </div>
+
+
+    <!-- footer -->
+    <div data-include-path="https://gb.worldvision.or.kr/resources/wvFrt/project/template/inc/footer.html"></div>
+    <!-- //footer -->
+
+    <script>
+        window.addEventListener('load', function () {
+            var allElements = document.getElementsByTagName('*');
+            Array.prototype.forEach.call(allElements, function (el) {
+                var includePath = el.dataset.includePath;
+                if (includePath) {
+                    var xhttp = new XMLHttpRequest();
+                    xhttp.onreadystatechange = function () {
+                        if (this.readyState == 4 && this.status == 200) {
+                            el.outerHTML = this.responseText;
+                        }
+                    };
+                    xhttp.open('GET', includePath, true);
+                    xhttp.send();
+                }
+            });
+        }); 
+
+        //  인도적 지원사업
+        function forceNavigate(event) {
+            event.preventDefault();
+
+            const isMobile = window.innerWidth <= 767;
+            const targetId = isMobile ? 'section031-mobile' : 'section031';
+            
+            // 다른 페이지로 이동하면서 해시 추가
+            window.location.href = `intBusiness2.html#${targetId}`;
+        }
+    </script>
+        
 </body>
 
 </html>
