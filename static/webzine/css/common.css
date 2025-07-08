@@ -46,7 +46,7 @@ html, body {
     width: 100%;
     height: 100%;
     font-family: 'Noto Sans KR', sans-serif; /* 구글 폰트를 적용하는 경우 */
-    line-height: 1.5; /* 텍스트 가독성을 위한 기본 라인 높이 */
+    line-height: 1.7; /* 텍스트 가독성을 위한 기본 라인 높이 */
     letter-spacing: -2%;
     -webkit-font-smoothing: antialiased; /* 텍스트 렌더링 최적화 */
     -moz-osx-font-smoothing: grayscale; /* 텍스트 렌더링 최적화 */

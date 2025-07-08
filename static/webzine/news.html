@@ -9,9 +9,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
     <!-- SEO 정보 입력-->	
-    <title>한국월드비전 웹진 | 메인 홈 - 월드비전·2025·여름호</title>
+    <title>한국월드비전 웹진 | 새소식</title>
     <meta name="description" content="한국월드비전은 지구촌 2억 명 어린이와 가족, 지역사회를 돕는 글로벌 NGO 입니다. 월드비전은 투명한 기부금을 약속합니다.">
-    <meta property="og:title" content="한국월드비전 웹진 | 메인 홈 - 월드비전·2025·여름호">
+    <meta property="og:title" content="한국월드비전 웹진 | 새소식">
     <meta property="og:description" content="한국월드비전은 지구촌 2억 명 어린이와 가족, 지역사회를 돕는 글로벌 NGO 입니다. 월드비전은 투명한 기부금을 약속합니다.">
     <meta property="og:image" content="https://www.worldvision.or.kr/static/images/common/logo.png">
     <meta property="og:url" content="https://www.worldvision.or.kr/">
@@ -168,16 +168,16 @@
                         <source srcset="images/common/arrowMob.png" media="(max-width: 767px)">
                         <img class="arrow-img animate__animated animate__fadeInDown" src="images/common/arrow.png" alt="화살표 이미지 아래로">
                     </picture>
-                    <span class="arrow-title fw-5 animate__animated animate__zoomIn">새소식</span>
+                    <span class="arrow-title fw-6 animate__animated animate__zoomIn">새소식</span>
                 </div>
             </div>
-            <!-- 컨텐츠 시작 -->
-            <div class="sub-content-section news" >
+            <!-- 본문시작 -->
+            <div class="sub-content-section news">
 
                 <div class="content-wrap">
                     
                     <div class="content">
-                        <div class="section one mt-3">
+                        <div class="section-sub one mt-3">
                             <h2 class="titleB fw-7">월드비전 <br class="mob-br"/> 후원자님께 드리는 <br class="mob-br"/> 특별한 선물</h2>
                             <div class="subtitle">: 2025 씨네Q 영화 할인</div>
                             <img class="ticket-image animate-on-scroll" src="images/news/cineq_ticket.png" alt="CINEQ 할인 티켓">
@@ -189,7 +189,7 @@
 
                         <div class="dashed-line mt-8"></div>
 
-                        <div class="section two mt-10">
+                        <div class="section-sub two mt-10">
                             <img class="icon" src="images/news/icon.png" alt="씨네Q 로고" >
                             <div class="title bunpil">후원자님만을 위한 특별가</div>
                             <table>
@@ -207,17 +207,17 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="section three mt-15">
+                        <div class="section-sub three mt-15">
                             <img class="icon" src="images/news/icon.png" alt="씨네Q 로고" >
                             <div class="title bunpil">씨네Q 할인 가능 지점</div>
                             <div class="description fw-6 mt-3">
                                 전국 7개 지점에서 이용 가능
                             </div>
                             <div class="description">
-                                (신도림, 동탄, 천안불당, 경주보문, 구미양곡, 남양주다산. 청라)
+                                (신도림, 동탄, 천안불당, 경주보문,<br class="mob"/> 구미양곡, 남양주다산. 청라)
                             </div>
                         </div>
-                        <div class="section four mt-15">
+                        <div class="section-sub four mt-15">
                             <img class="icon" src="images/news/icon.png" alt="씨네Q 로고" >
                             <div class="title bunpil">언제, 얼마나 할인 혜택</div>
                             <div class="description fw-6 mt-3">
@@ -225,7 +225,7 @@
                                 최대 43% 할인 혜택
                             </div>
                         </div>
-                        <div class="section five mt-15">
+                        <div class="section-sub five mt-15">
                             <img class="icon" src="images/news/icon.png" alt="씨네Q 로고" >
                             <div class="title bunpil">씨네Q 할인 이용 방법</div>
                             <div class="steps animate-on-scroll">
@@ -253,7 +253,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="section six mt-15">
+                        <div class="section-sub six mt-15">
                             <img class="icon" src="images/news/icon.png" alt="씨네Q 로고" >
                             <div class="title bunpil">특별 쿠폰 코드</div>
                             <div class="description fw-6 mt-3">
@@ -277,7 +277,7 @@
                                 </tr>
                             </table>
                         </div>
-                        <div class="section seven mt-15">
+                        <div class="section-sub seven mt-15">
                             <button
                                 type="button" 
                                 class="btn01 animate-on-scroll" 
@@ -340,16 +340,6 @@
             });
         }); 
 
-        //  인도적 지원사업
-        function forceNavigate(event) {
-            event.preventDefault();
-
-            const isMobile = window.innerWidth <= 767;
-            const targetId = isMobile ? 'section031-mobile' : 'section031';
-            
-            // 다른 페이지로 이동하면서 해시 추가
-            window.location.href = `intBusiness2.html#${targetId}`;
-        }
     </script>
 </body>
 

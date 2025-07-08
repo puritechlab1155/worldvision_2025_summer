@@ -498,7 +498,7 @@
     align-items: center;
 }
 #container .arrow-title {
-    font-size: clamp(12px, 2vw, 20px);
+    font-size: clamp(16px, 2vw, 20px);
     color: #F56400;
     animation-delay: 1s;
 }
@@ -647,29 +647,30 @@
     margin: 80px auto 30px;
 }
 
-#container .campaign .section {
+#container .section-sub {
     padding-top: clamp(40px, 8vw, 100px);
     padding-bottom: clamp(50px, 8vw, 100px);
 }
 
-#container .campaign .description.one{
+/* #container .campaign .description.one{
     padding: 20px 0 100px;
+} */
+#container .campaign .description.one, #container .campaign .description.two,
+#container .campaign .description.three, #container .campaign .description.four{
+    padding: 30px 0;
 }
-#container .campaign .description.two{
-    padding: 90px 0 20px;
-}
-#container .campaign .description.three{
+/* #container .campaign .description.three{
     padding: 20px 0 90px;
 }    
 #container .campaign .description.four{
     padding: 10px 0 90px;
-}    
+}     */
 #container .campaign .title{
     font-size: clamp(20px, 5vw ,32px);
     font-weight: 400;
     margin-top: clamp(10px, 3vw, 20px);
 }
-#container .campaign .img-double{
+#container .sub-content-section .img-double{ /* 서브페이지 공통 */
     display: flex;
     gap: clamp(10px, 2vw, 20px);
     justify-content: space-around;
@@ -680,11 +681,13 @@
 }
 #container .campaign .img-double img{
     width: calc((100% - 20px) / 2);
+}
+#container .sub-content-section .img-double img{ /* 서브페이지 공통 */
     height: auto;
     display: block;
     object-fit: cover; 
 }
-#container .campaign .img {
+#container .sub-content-section .img { /* 서브페이지 공통 */
     max-width: 1240px;
     margin: 0 auto;
     width: 100%;
@@ -706,7 +709,7 @@
     padding: 20px 0;
 }
 
-#container .campaign .point-box {
+#container .sub-content-section .point-box {
     font-size: clamp(20px, 5vw, 32px);
     color: #FF6B00;
     font-family: 'HakgyoansimBunpilR', sans-serif;
@@ -848,4 +851,106 @@
     #container .campaign .dash-wrap.mt-7{
         margin-top: 30px;
     }    
+}
+
+
+
+
+/* ----- subType1 유형 페이지 시작 */
+/* subType1 공통 스타일 */
+.subType1 .image-wrapper {
+    position: relative;
+    width: 100%;      /* 원하는 사이즈 */
+    overflow: hidden;
+    clip-path: ellipse(100% 100% at 50% 0%); /* 하단에 반원 형태 */
+}  
+.subType1 .base-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}  
+  /*.overlay {
+    position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 107, 0, 0.8);*/ /* 원하는 배경색 */
+  /*clip-path: ellipse(100% 100% at 50% 0%);*/ /* 하단에 반원 형태 */
+ /* pointer-events: none;
+  }*/
+.subType1 .title-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+.subType1 .titleTop {
+    position: relative;
+}
+.subType1 .menu-title {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FF6B00; 
+    /* font-size: clamp(12px, 2vw, 20px); */
+    font-size: clamp(16px, 2vw, 20px);
+    font-weight: 700;
+}
+.subType1 .title-wrapper .titleBg {
+    max-width: clamp(150px,11vw,200px);
+    width: 100%;
+    margin: auto;
+}
+.subType1 .title-wrapper .title {
+    /* font-size: clamp(20px, 2vw, 32px); */
+    font-size: clamp(25px, 2vw, 32px);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: clamp(10px,2vw,20px);
+}
+.subType1 .content {
+   
+}
+.subType1 .content .description {
+    display: block;
+    max-width: 1080px;
+    margin: 0 auto;
+    font-size: clamp(15px, 2vw, 18px);
+
+}
+@media (max-width: 767px) {
+    .subType1 .menu-title {
+        font-size: clamp(12px, 2vw, 20px);
+    }
+    .subType1 .title-wrapper .titleBg {
+        max-width: clamp(150px,11vw,200px);
+    }
+    .subType1 .title-wrapper .title {
+        font-size: clamp(20px, 2vw, 32px);
+        /* font-size: clamp(25px, 2vw, 32px); */
+    }
+}
+
+
+/* sub1 스페셜 스토리 */
+.sub-content-section .smallImg {
+    max-width: 1240px;
+    margin: 0 auto;
+    width: 50%;
+}
+.specialStory {
+
+}
+
+.flex-smallMark {
+    display: flex;
+    justify-content: space-around;
 }
