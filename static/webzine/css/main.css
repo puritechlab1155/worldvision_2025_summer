@@ -974,12 +974,12 @@
 }
 
 @media (max-width: 1280px) {
-    .subType1 .content .description {
+    .content .description {
         max-width: 80%;
     }
 }
 @media (max-width: 767px) {
-    .subType1 .content .description {
+    .content .description {
         max-width: 100%;
     }
     .subType1 .menu-title {
@@ -992,8 +992,6 @@
         font-size: clamp(20px, 2vw, 32px);
         /* font-size: clamp(25px, 2vw, 32px); */
     }
-}
-@media (max-width: 480px) {
     .flex-bigMark .mark {
         width: 20px;
         height: 15px;   
@@ -1002,7 +1000,8 @@
 }
 
 
-/* sub1 스페셜 스토리 */
+
+/* 스페셜 스토리 */
 .sub-content-section .smallImg {
     max-width: 1240px;
     margin: 0 auto;
@@ -1014,7 +1013,28 @@
 }
 
 
+
+
+
+
+
+
+/* 현장이야기 */
+.subType1 .title-wrapper .subT {
+    font-size: 18px;
+}
+.flexBox {  
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(10px, 2vw, 20px);
+}
+.flexBox-item {
+    max-width: 590px;
+}
+
+
 @media (max-width: 767px) {
+    /* 스페셜 스토리 */
     .sub-content-section .smallImg {
         width: 100%;
     }
@@ -1022,5 +1042,10 @@
         font-size: 12px;
     }
 
+
+    /* 현장이야기 */
+    .subType1 .title-wrapper .subT {
+        font-size: 12px;
+    }
 }
 
