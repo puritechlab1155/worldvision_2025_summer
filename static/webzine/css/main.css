@@ -938,7 +938,7 @@
     /* padding-top: clamp(50px, 8vw, 100px); */
 }
 .subType1 .content .point-box-small {
-    font-size: clamp(15px, 5vw, 32px);
+    font-size: clamp(15px, 2vw, 24px);
     color: #FF6B00;
     font-family: 'HakgyoansimBunpilR', sans-serif;
     /* padding-top: clamp(50px, 8vw, 100px); */
@@ -969,7 +969,19 @@
 .subType1 .description {
     text-align: left;
 }
+.subType1 .description.tc {
+    text-align: center;
+}
+
+@media (max-width: 1280px) {
+    .subType1 .content .description {
+        max-width: 80%;
+    }
+}
 @media (max-width: 767px) {
+    .subType1 .content .description {
+        max-width: 100%;
+    }
     .subType1 .menu-title {
         font-size: clamp(12px, 2vw, 20px);
     }
