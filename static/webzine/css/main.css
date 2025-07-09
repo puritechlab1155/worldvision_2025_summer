@@ -648,8 +648,12 @@
 }
 
 #container .section-sub {
-    padding-top: clamp(40px, 8vw, 100px);
+    padding-top: clamp(50px, 8vw, 100px);
     padding-bottom: clamp(50px, 8vw, 100px);
+}
+#container .section-sub150 {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 /* #container .campaign .description.one{
@@ -709,7 +713,7 @@
     padding: 20px 0;
 }
 
-#container .sub-content-section .point-box {
+#container .campaign .point-box {
     font-size: clamp(20px, 5vw, 32px);
     color: #FF6B00;
     font-family: 'HakgyoansimBunpilR', sans-serif;
@@ -754,6 +758,7 @@
     max-width: 1080px;
     text-align: justify;
     margin: 0 auto;
+    letter-spacing: clamp(-0.9px, -0.1vw, -0.75px);
 }
 #container .campaign .report {
     font-size: clamp(12px, 2vw, 18px);
@@ -924,7 +929,45 @@
     max-width: 1080px;
     margin: 0 auto;
     font-size: clamp(15px, 2vw, 18px);
-
+    letter-spacing: clamp(-0.9px, -0.1vw, -0.75px);
+}
+.subType1 .content .point-box {
+    font-size: clamp(20px, 5vw, 32px);
+    color: #FF6B00;
+    font-family: 'HakgyoansimBunpilR', sans-serif;
+    /* padding-top: clamp(50px, 8vw, 100px); */
+}
+.subType1 .content .point-box-small {
+    font-size: clamp(15px, 5vw, 32px);
+    color: #FF6B00;
+    font-family: 'HakgyoansimBunpilR', sans-serif;
+    /* padding-top: clamp(50px, 8vw, 100px); */
+}
+/* 큰따옴표 아이콘 */
+.flex-bigMark {
+    display: flex;
+    justify-content: space-between;
+    align-self: start;
+    gap: 10px;
+    max-width: 1080px;
+    margin: auto;
+}
+#container .sub-content-section .flex-bigMark .point-box {
+    padding-top: 0;
+}
+.flex-bigMark .mark {
+    width: 50px;
+    height: 38px;
+}
+.txtPoint .caption {
+    display: block;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-top: 8px;
+}
+.subType1 .description {
+    text-align: left;
 }
 @media (max-width: 767px) {
     .subType1 .menu-title {
@@ -938,6 +981,13 @@
         /* font-size: clamp(25px, 2vw, 32px); */
     }
 }
+@media (max-width: 480px) {
+    .flex-bigMark .mark {
+        width: 20px;
+        height: 15px;   
+        margin-top: 20px;
+    }
+}
 
 
 /* sub1 스페셜 스토리 */
@@ -946,14 +996,19 @@
     margin: 0 auto;
     width: 50%;
 }
-.specialStory {
+#specialStory .caption.mPosit1{
+    display: block;
+    margin-top: -3.5%;
+}
+
+
+@media (max-width: 767px) {
+    .sub-content-section .smallImg {
+        width: 100%;
+    }
+    .txtPoint .caption {
+        font-size: 12px;
+    }
 
 }
 
-.flex-smallMark {
-    display: flex;
-    justify-content: space-around;
-}
-.flex-smallMark .point-box {
-    padding-top: 0;
-}
