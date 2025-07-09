@@ -1011,6 +1011,7 @@
     display: block;
     margin-top: -3.5%;
 }
+/*  */
 
 
 
@@ -1023,13 +1024,10 @@
 .subType1 .title-wrapper .subT {
     font-size: 18px;
 }
-.flexBox {  
+#siteStory .flexBox {  
     display: flex;
     justify-content: space-between;
     gap: clamp(10px, 2vw, 20px);
-}
-.flexBox-item {
-    max-width: 590px;
 }
 
 
@@ -1041,6 +1039,7 @@
     .txtPoint .caption {
         font-size: 12px;
     }
+    /*  */
 
 
     /* 현장이야기 */
