@@ -973,6 +973,12 @@
 .subType1 .description.tc {
     text-align: center;
 }
+.subType1 .content  .description.mt-4 {
+    margin-top: 40px;
+}
+.subType1 .content  .description.mb-4 {
+    margin-bottom: 40px;
+}
 
 @media (max-width: 1280px) {
     .content .description {
@@ -1025,7 +1031,26 @@ left: 0;
 #character .point-box .black-text {
     display: block;
 }
-
+.subType1 .title-wrapper .titleBgType1 {
+    max-width: clamp(220px, 17vw, 310px);
+    width: 100%;
+    margin: auto;
+}
+.subType1 .bgTxt-wrap {
+    position: relative;
+    width: 100%;
+    width: auto;
+    margin: 0 auto;
+}
+.subType1 .bunpil.bgTxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: clamp(15px, 2vw, 24px);
+    width: 80%;
+}
 
 
 
@@ -1035,11 +1060,13 @@ left: 0;
 .subType1 .title-wrapper .subT {
     font-size: 18px;
 }
-#siteStory .flexBox {  
+.sub-content-section .flexBox {  
     display: flex;
     justify-content: space-between;
     gap: clamp(10px, 2vw, 20px);
 }
+
+
 @media (max-width: 900px) {
     /* 현장이야기 */
     .subType1 .title-wrapper .title .mob ,
@@ -1061,7 +1088,10 @@ left: 0;
     .txtPoint .caption {
         font-size: 12px;
     }
-    /*  */
+    /* 기획특집:75주년인물 */
+    .subType1 .title-wrapper .titleBgType1 {
+        max-width: clamp(180px, 29vw, 220px);
+    }
 
 
     /* 현장이야기 */
