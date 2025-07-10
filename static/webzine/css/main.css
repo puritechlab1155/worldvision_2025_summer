@@ -1053,6 +1053,16 @@
     width: 80%;
     line-height: 1.4;
 }
+.subType1 .bunpil.bgTxt1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: clamp(15px, 2vw, 24px);
+    width: 80%;
+    line-height: 1.4;
+}
 .character .bgTitle.bottom .point-box {
     color: #000;
 }
@@ -1077,7 +1087,8 @@
 .subType1 .content .description.txtPoint {
     max-width: none;
 }
-
+/* 후원자이야기 */
+/* 별첨 */
 
 
 
