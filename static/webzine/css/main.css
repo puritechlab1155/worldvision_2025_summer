@@ -1089,7 +1089,19 @@
 }
 /* 후원자이야기 */
 /* 별첨 */
-
+#patron .supWrap {
+    padding-top: 10px;
+    border-top: 1px solid #808080;
+}
+#patron .supWrap .supName,
+#patron .supWrap .supDesc {
+    color: #808080;
+    font-size: 13px;
+    letter-spacing: -1px;
+}
+#patron .supWrap .supName {
+    font-weight: 600;
+}
 
 
 
@@ -1117,6 +1129,11 @@
     }
 }
 
+@media (max-width: 681px) {
+    .subType1 .bunpil.bgTxt1.position1 {
+        top: 45%;
+    }
+}
 @media (max-width: 767px) {
     /* 스페셜 스토리 */
     .sub-content-section .smallImg {
