@@ -142,9 +142,6 @@ img {
 .mt-9 {
   margin-top: 90px;
 }
-.mt-10 {
-  margin-top: 100px;
-}
 .mt-15 {
   margin-top: 150px;
 }
@@ -208,7 +205,7 @@ img {
 }
 .txtPoint{
   color: #FF6B00;
-}
+} 
 /* 공통버튼 1: 서브 */
 .btn01{
   font-family: 'HakgyoansimBunpilR';

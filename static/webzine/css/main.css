@@ -1066,8 +1066,17 @@
 #container .description2.sub-content-section {
     margin-top: 40px;
 }
-
-
+#container .sub-content-section .description.mt-100 ,
+.mt-100 {
+    margin-top: clamp(50px, 6vw, 100px);
+}
+#container .sub-content-section .description.mb-100,
+.mb-100 {
+    margin-bottom: clamp(50px, 6vw, 100px);
+}
+.subType1 .content .description.txtPoint {
+    max-width: none;
+}
 
 
 
