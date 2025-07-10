@@ -936,7 +936,7 @@
     font-size: clamp(20px, 5vw, 32px);
     color: #FF6B00;
     font-family: 'HakgyoansimBunpilR', sans-serif;
-    /* padding-top: clamp(50px, 8vw, 100px); */
+    line-height: 1.35;
 }
 .subType1 .content .point-box-small {
     font-size: clamp(15px, 2vw, 24px);
@@ -1023,13 +1023,14 @@
     position: relative;
 }
 #character .point-box {
-position: absolute;
-background: yellow;
-top: 0;
-left: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 #character .point-box .black-text {
     display: block;
+    line-height: 1.4;
+    margin-top: 8px;
 }
 .subType1 .title-wrapper .titleBgType1 {
     max-width: clamp(220px, 17vw, 310px);
@@ -1050,7 +1051,23 @@ left: 0;
     text-align: center;
     font-size: clamp(15px, 2vw, 24px);
     width: 80%;
+    line-height: 1.4;
 }
+.character .bgTitle.bottom .point-box {
+    color: #000;
+}
+.character .bgTitle.bottom .black-text {
+    display: block;
+}
+/* 부분 공통스타일 */
+#container .sub-content-section.subType2-inner {
+    margin-bottom: 0;
+}
+#container .description2.sub-content-section {
+    margin-top: 40px;
+}
+
+
 
 
 
@@ -1092,6 +1109,16 @@ left: 0;
     .subType1 .title-wrapper .titleBgType1 {
         max-width: clamp(180px, 29vw, 220px);
     }
+    #container #character.sub-content-section .bgTitle .img {
+        margin-left: 30%;
+        width: 70%;
+    }
+    .subType1 .content .point-box {
+        font-size: clamp(20px, 4vw, 25px);
+    }
+    #container .black-text {
+        font-size: clamp(15px, 3vw, 20px);
+    }
 
 
     /* 현장이야기 */
@@ -1102,4 +1129,5 @@ left: 0;
         display: none;
     }
 }
+
 
