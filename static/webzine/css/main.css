@@ -628,7 +628,8 @@
     margin: 0 auto;
     text-align: center;
 }
-#container .campaign .intro-title {
+#container .campaign .intro-title,
+#container .campaign .intro-title{
     font-size: clamp(20px, 5vw ,32px);
     font-weight: 700;
 }
@@ -795,6 +796,9 @@
 }
 #container .campaign .section-sub.four {
     padding-bottom: 0;
+}
+#container .sub-content-section.news .section-sub.seven {
+    padding-top: 0;
 }
 
 @media (max-width: 767px) {
@@ -1107,7 +1111,80 @@
 #patron .supWrap .supName {
     font-weight: 600;
 }
+/* 후원자 참여 이야기 */
+.main .bg.participation .btn02_area {
+    width: fit-content;
+    margin: auto;
+}
+/* 노트 */
+#participation .note.bgTxt-wrap {
+    position: relative;
+    max-width: 1080px;
+}
+/* #participation .note.bgTxt-wrap .bgTxt {
+    background: rgb(0, 255, 55);
+    width: 100%;
+    
+} */
+#participation .note.bgTxt-wrap .bgTxt-inner {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -58%);
+    text-align: center;
+    /* background: yellow; */
+    width: 80%;
+}
+#participation .note .bgTxt-innerWrap {
 
+}
+#participation .note .bgTxt-innerWrap .f-48 {
+    font-size: clamp(25px, 2vw, 48px);
+    line-height: 1.4;
+}
+#participation .note .f-24 {
+    font-size: clamp(18px, 2vw, 24px);
+    line-height: 1.2;
+    font-weight: 700;
+}
+#participation .noteList-wrap {
+
+}
+#participation .noteList-wrap .description.mt-2 {
+    margin-top: 20px;
+}
+#participation .noteList-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 35px;
+}
+#participation .noteList-inner {
+
+}
+#participation .noteList-inner .f-20 {
+    font-size: clamp(15px, 2vw, 20px);
+    line-height: 1.4;
+}
+#participation .noteList-inner .circle {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #FF6B00;
+    margin: auto;
+    margin-bottom: 5px;
+}
+#participation .noteImg-wrap {
+}
+#participation .noteImg-wrap .caption.black,
+.participation .caption.black {
+    color: #000;
+    text-align: center;
+}
+#container .content-section.participation .sub-content-section {
+    margin-bottom: 40px;
+}
 
 
 /* 현장이야기 */
@@ -1160,6 +1237,23 @@
     }
     #container .black-text {
         font-size: clamp(15px, 3vw, 20px);
+    }
+    /* 후원자 참여이야기 */
+    #participation .noteList-wrap {
+        margin-top: 30px;
+    }
+    #participation .noteList-flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+    #participation .noteList-wrap .description.mt-2 {
+        margin-top: 0;
+    }
+    #participation .noteImg-wrap .double-wrap.mt-4 {
+        margin-top: 8px;
+    }
+    #participation .noteList-flex {
+        margin-top: 10px;
     }
 
 
