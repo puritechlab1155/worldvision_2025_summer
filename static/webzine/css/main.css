@@ -644,7 +644,7 @@
     margin-bottom: clamp(50px, 10vw, 80px);
 }
 #container .campaign .intro .img {
-    margin: 80px auto 30px;
+    /* margin: 80px auto 30px; */
 }
 
 #container .section-sub {
@@ -661,7 +661,7 @@
 } */
 #container .campaign .description.one, #container .campaign .description.two,
 #container .campaign .description.three, #container .campaign .description.four{
-    padding: 30px 0;
+    /* padding: 30px 0; */
 }
 /* #container .campaign .description.three{
     padding: 20px 0 90px;
@@ -697,30 +697,30 @@
     width: 100%;
 }
 #container .campaign .title-wrap{
-    padding: 20px 0;
+    /* padding: 20px 0; */
 }
 #container .campaign .semi-wrap {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     gap: clamp(20px, 4vw, 40px);
     width: 100%;
-    padding: 20px 0;
+    padding: 20px 0; */
 }
 #container .campaign .double-wrap {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     gap: clamp(20px, 4vw, 40px);
-    padding: 20px 0;
+    padding: 20px 0; */
 }
 
 #container .campaign .point-box {
-    font-size: clamp(20px, 5vw, 32px);
+    /* font-size: clamp(20px, 5vw, 32px);
     color: #FF6B00;
     font-family: 'HakgyoansimBunpilR', sans-serif;
-    padding-top: clamp(50px, 8vw, 100px);
+    padding-top: clamp(50px, 8vw, 100px); */
 }
 #container .semicolon {
-    background-image: url('../images/common/semicolon.png'); 
+    /* background-image: url('../images/common/semicolon.png'); 
     background-repeat: no-repeat;
     background-position: top center;
     background-size: contain;
@@ -732,7 +732,7 @@
     max-width: 1080px;
     margin: 0 auto;
     font-family: 'HakgyoansimBunpilR', sans-serif;
-    width: 100%;
+    width: 100%; */
 }
 #container .orange-text {
     color: #FF6B00;
@@ -751,14 +751,16 @@
     margin: 0 auto;
     font-family: 'HakgyoansimBunpilR', sans-serif;
     width: 100%;
+    margin-bottom: 40px;
+    background: yellow;
 }
 
 #container .campaign .description {
-    font-size: clamp(15px, 2vw, 18px);
+    /* font-size: clamp(15px, 2vw, 18px);
     max-width: 1080px;
     text-align: justify;
     margin: 0 auto;
-    letter-spacing: clamp(-0.9px, -0.1vw, -0.75px);
+    letter-spacing: clamp(-0.9px, -0.1vw, -0.75px); */
 }
 #container .campaign .report {
     font-size: clamp(12px, 2vw, 18px);
@@ -791,6 +793,9 @@
     max-width: 100vw;
     margin-left: calc(-50vw + 50%);
 }
+#container .campaign .section-sub.four {
+    padding-bottom: 0;
+}
 
 @media (max-width: 767px) {
     #container .news .section.one {
@@ -820,19 +825,19 @@
         margin-bottom: 200px;
     }
     #container .campaign .summary {
-        margin-top: 20px;
+        /* margin-top: 20px; */
     }
     #container .campaign .intro .img {
-        width: 100%;
-        margin: 50px auto 10px;
+        /* width: 100%;
+        margin: 50px auto 10px; */
     }
     #container .campaign .title-wrap{
         padding: 20px 0 30px;
     }
     #container .campaign .semi-wrap {
-        gap: 10px;
+        /* gap: 10px; */
     }
-    #container .campaign .description.one{
+    /* #container .campaign .description.one{
         padding: 0px 0 50px;
     }
     #container .campaign .description.two{
@@ -855,7 +860,7 @@
     }
     #container .campaign .dash-wrap.mt-7{
         margin-top: 30px;
-    }    
+    }     */
 }
 
 
