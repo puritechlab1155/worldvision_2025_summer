@@ -165,7 +165,7 @@ img {
 }
 
 
-.mob-br, .mob480 {
+.mob-br, .mob480, .mob360 {
   display: none;
 }
 @media (max-width: 767px) {
@@ -175,6 +175,11 @@ img {
 }
 @media (max-width: 480px) {
   .mob480 {
+      display: block;
+  }
+}
+@media (max-width: 372px) {
+  .mob360 {
       display: block;
   }
 }

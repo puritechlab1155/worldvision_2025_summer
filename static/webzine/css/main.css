@@ -266,35 +266,19 @@
     max-width: 600px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media (max-width: 958px) {
 
     .main .special-item {
         max-width: 550px;
     }
- /* //메인페이지 */
-
-
 }
 
 
 @media (max-width: 768px) {
+    /* 헤더 공백 */
+    #container.scroll_up {
+        padding-top: 0px;
+    }
     /* 메인 페이지 */
     .main .mob {
         display: block;
@@ -629,12 +613,14 @@
     text-align: center;
 }
 #container .campaign .intro-title,
-#container .campaign .intro-title{
+#container .news .intro-title{
     font-size: clamp(20px, 5vw ,32px);
     font-weight: 700;
+    line-height: 1.3;
 }
 #container .campaign .summary {
     text-align: center;
+    margin-top: 10px;
 }
 #container .campaign .word {
     margin: 0 auto;
@@ -753,7 +739,6 @@
     font-family: 'HakgyoansimBunpilR', sans-serif;
     width: 100%;
     margin-bottom: 40px;
-    background: yellow;
 }
 
 #container .campaign .description {
@@ -770,7 +755,7 @@
 }
 #container .campaign .description2 {
     position: relative;
-    font-size: clamp(12px, 4vw, 18px);
+    font-size: clamp(12px, 1vw, 18px);
     max-width: 1240px;
     text-align: justify;
     margin: 0 auto;
@@ -866,6 +851,15 @@
         margin-top: 30px;
     }     */
 }
+@media (max-width: 480px) {
+    #container .campaign .dash-wrap {
+        padding: 15px;
+    }
+    #container .campaign .img-double img {
+        width: calc((100% - 10px) / 2);
+    }
+}
+
 
 
 
@@ -920,7 +914,7 @@
     font-weight: 700;
 }
 .subType1 .title-wrapper .titleBg {
-    max-width: clamp(120px, 15vw, 200px);
+    max-width: clamp(100px, 11vw, 200px);
     width: 100%;
     margin: auto;
 }
@@ -1002,7 +996,7 @@
         font-size: clamp(12px, 2vw, 20px);
     }
     .subType1 .title-wrapper .titleBg {
-        max-width: clamp(150px,11vw,200px);
+        /* max-width: clamp(150px,11vw,200px); */
     }
     .subType1 .title-wrapper .title {
         font-size: clamp(20px, 2vw, 32px);
@@ -1042,6 +1036,11 @@
     margin-top: 8px;
 }
 .subType1 .title-wrapper .titleBgType1 {
+    max-width: clamp(160px, 17vw, 310px);
+    width: 100%;
+    margin: auto;
+}
+.subType1 .title-wrapper .titleBgType2 {
     max-width: clamp(220px, 17vw, 310px);
     width: 100%;
     margin: auto;
@@ -1062,7 +1061,8 @@
     width: 80%;
     line-height: 1.4;
 }
-.subType1 .bunpil.bgTxt1 {
+.subType1 .bunpil.bgTxt1,
+.subType1 .bunpil.bgTxt2 {
     position: absolute;
     top: 40%;
     left: 50%;
@@ -1132,7 +1132,6 @@
     left: 50%;
     transform: translate(-50%, -58%);
     text-align: center;
-    /* background: yellow; */
     width: 80%;
 }
 #participation .note .bgTxt-innerWrap {
@@ -1196,7 +1195,11 @@
     justify-content: space-between;
     gap: clamp(10px, 2vw, 20px);
 }
-
+@media (max-width: 1340px) {
+    .subType1 .title-wrapper .titleBgType1 {
+        max-width: 240px;
+    }
+}
 
 @media (max-width: 900px) {
     /* 현장이야기 */
@@ -1226,7 +1229,10 @@
     }
     /* 기획특집:75주년인물 */
     .subType1 .title-wrapper .titleBgType1 {
-        max-width: clamp(180px, 29vw, 220px);
+        max-width: clamp(160px, 29vw, 220px);
+    }
+    .subType1 .title-wrapper .titleBgType2 {
+        max-width: clamp(150px, 29vw, 220px);
     }
     #container #character.sub-content-section .bgTitle .img {
         margin-left: 30%;
@@ -1264,6 +1270,23 @@
     .subType1 .title-wrapper .subT .mob {
         display: none;
     }
+    #container .description2 {
+        font-size: 12px;
+    }
 }
 
-
+@media (max-width: 480px) {
+    .subType1 .bunpil.bgTxt1 {
+        top: 45%;
+    }
+    .subType1 .bunpil.bgTxt2 {
+        top: 40%;
+    }
+    #participation .note.bgTxt-wrap .bgTxt-inner {
+        width: 90%;
+    }
+    #container .sub-content-section .img-double.flex480 {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
