@@ -77,13 +77,13 @@ img {
     color: inherit; /* 링크 기본 색상을 텍스트 색상으로 */
   }
 
-  /* .pc_display { display: block; }
+  .pc_display { display: block; }
   .mobile_display { display: none; }
 
     @media only all and (max-width: 767px) {
         .pc_display { display: none; }
         .mobile_display { display: block; }
-    } */
+    }
 
 
 .inner {
@@ -186,6 +186,7 @@ img {
 /* .popup-image {
   opacity: 0;
 } */
+ /* 여기서부터 공통 스타일 */
 .dashed-line {
   width: 100vw;
   height: 2px;

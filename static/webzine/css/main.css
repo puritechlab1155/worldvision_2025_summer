@@ -72,7 +72,7 @@
     .campaign .my_gnb02 ul li .name { font-weight: bold; }
 }
 
-#section01, #section02, #section03, #section04, #section05{
+/* #section01, #section02, #section03, #section04, #section05{
     scroll-margin-top: 500px;
 }
 #section011{
@@ -83,7 +83,7 @@
 }
 #section051, #section021{
     scroll-margin-top: 200px;
-}
+} */
 
 /* main */
 
@@ -275,7 +275,7 @@
 
 
 @media (max-width: 768px) {
-    /* 헤더 공백 */
+    /* 헤더 공백제거 */
     #container.scroll_up {
         padding-top: 0px;
     }
