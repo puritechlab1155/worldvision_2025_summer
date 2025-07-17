@@ -242,8 +242,6 @@ img {
   transition: color 0.1s linear, background-color 0.1s linear;
   cursor: pointer;
   position: relative;
-}
-.btn02_area .btn02-item a {
   width: 100%;
   display: block;
   font-size: clamp(12px, 2vw, 30px);
@@ -272,7 +270,7 @@ img {
 } 
 @media only all and (max-width: 767px) {
   .btn02_area .btn02-item {
-    padding: 5px;
+    padding: 7px;
   }
 }/* 여기까지 버튼 02 */
 

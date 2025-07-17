@@ -942,7 +942,7 @@
     line-height: 1.35;
 }
 .subType1 .content .point-box-small {
-    font-size: clamp(15px, 2vw, 24px);
+    font-size: clamp(17px, 2vw, 24px);
     color: #FF6B00;
     font-family: 'HakgyoansimBunpilR', sans-serif;
     /* padding-top: clamp(50px, 8vw, 100px); */
@@ -986,6 +986,13 @@
 @media (max-width: 1280px) {
     .content .description {
         max-width: 80%;
+    }
+    .news .content .description {
+        max-width: none;
+        margin: auto;
+    }
+    #container .news .step .description.mid {
+        margin: 0 auto;
     }
 }
 @media (max-width: 767px) {
