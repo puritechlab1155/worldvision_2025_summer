@@ -63,17 +63,17 @@
             <!-- 상단 메뉴 -->
             <div class="header_wrap">
                 <div class="logo">
-                    <h1><a href="index.html"><img src="images/common/logo.png" alt="한국월드비전 웹진"><span class="hide">한국월드비전
-                                웹진</span></a></h1>
+                    <h1>
+                        <a id="header-btn-logo" href="index.html">
+                            <img src="images/common/logo.png" alt="한국월드비전 웹진"><span class="hide">한국월드비전 웹진</span>
+                        </a>
+                    </h1>
                 </div>
                 <div class="vol_info pc_display">2025 SUMMER VOL. 255</div>
                 <div class="vol_info mobile_display">VOL. 255</div>
                 <div class="menu">
-                    <button type="button">MENU</button>
+                    <a id="header-btn-menu">MENU</a>
                 </div>
-                <!-- <div class="angles mobile_display">
-                    <img src="images/common/angle-down.svg" alt="아래로 펼치기" class="down">
-                </div> -->
             </div> <!-- //상단 메뉴 -->
         </header>
 
@@ -82,38 +82,42 @@
             <div class="gnb_wrap">
                 <div class="mn_top">
                     <div class="vol_info"><span>2025 SUMMER</span> VOL. 255</div>
-                    <div class="close_btn"><img src="images/common/menuClose.svg" alt="메뉴 닫기"></div>
+                    <div class="close_btn">
+                        <a id="gnb-btn-close" href="javascript:void(0);">
+                            <img src="images/common/menuClose.svg" alt="메뉴 닫기">
+                        </a>
+                    </div>
                 </div>
                 <nav>
                     <ul class="gnb">
                         <li>
                             <ul class="lnb">
-                                <li><a href="specialStory.html">스페셜 스토리</a></li>
-                                <li><a href="character.html">기획특집 : 75주년 인물</a></li>
+                                <li><a id="gnb-link-special" href="specialStory.html">스페셜 스토리</a></li>
+                                <li><a id="gnb-link-character" href="character.html">기획특집 : 75주년 인물</a></li>
                             </ul>
                         </li>
                         <li>
                             <ul class="lnb">
-                                <li><a href="patron.html">후원자 이야기</a></li>
-                                <li><a href="participation.html">후원자 참여 이야기</a></li>
+                                <li><a id="gnb-link-patron" href="patron.html">후원자 이야기</a></li>
+                                <li><a id="gnb-link-participation" href="participation.html">후원자 참여 이야기</a></li>
                             </ul>
                         </li>
                         <li>
                             <ul class="lnb">
-                                <li><a href="seagull.html">높이 나는 갈매기</a></li>
-                                <li><a href="siteStory.html">현장 이야기</a></li>
+                                <li><a id="gnb-link-seagull" href="seagull.html">높이 나는 갈매기</a></li>
+                                <li><a id="gnb-link-site" href="siteStory.html">현장 이야기</a></li>
                             </ul>
                         </li>
                         <li>
                             <ul class="lnb">
-                                <li><a href="campaign.html">캠페인</a></li>
-                                <li><a href="news.html">새소식</a></li>
+                                <li><a id="gnb-link-campaign" href="campaign.html">캠페인</a></li>
+                                <li><a id="gnb-link-news" href="news.html">새소식</a></li>
                             </ul>
                         </li>
                     </ul>
                 </nav>
                 <div class="btns">
-                    <a href="https://www.worldvision.or.kr/informationCenter/letter">지난호 보기</a>
+                    <a id="gnb-link-archive" href="https://www.worldvision.or.kr/informationCenter/letter">지난호 보기</a>
                 </div>
             </div><!-- //gnb_wrap -->
 
@@ -132,23 +136,28 @@
         </div>
         <div class="my_gnb02 mobile_display" id="my_gnb02">
             <div class="my_info02">
-                <a href="javascript:void(0);" class="btn_myinfo02"><span class="hide">최상단 메뉴</span></a>
+                <a id="topmenu-btn-toggle" href="javascript:void(0);" class="btn_myinfo02"><span class="hide">최상단 메뉴</span></a>
                 <div class="my_lyr02">
                     <!--D:로그인 전 노출 메뉴-->
                     <ul>
-                        <li><a href="/loginProcess/initLogin">로그인</a></li>
-                        <li><a href="/membership/initMembership?openYn=Y">회원가입</a></li>
+                        <li><a id="mobilegnb-btn-login" href="/loginProcess/initLogin">로그인</a></li>
+                        <li><a id="mobilegnb-btn-join" href="/membership/initMembership?openYn=Y">회원가입</a></li>
                         <li><a href="/a/light_util" class="btn_type btn_size btn_bg_orange"><span>후원하기</span></a></li>
                     </ul>
                     <!--D:로그인 후 노출 메뉴-->
                     <ul>
                         <li><span class="name">월드비전</span>님</li>
-                        <li class="btn_area"><a href="/a/light_util"
-                                class="btn_type btn_size btn_bg_orange"><span>후원하기</span></a></li>
-                        <li class="divide"><a
-                                href="javascript:loading_open_hreflink('https://my.worldvision.or.kr', '1');">마이월드비전</a>
+                        <li class="btn_area">
+                            <a id="mobilegnb-btn-donation" href="/a/light_util" class="btn_type btn_size btn_bg_orange">
+                                <span>후원하기</span>
+                            </a>
                         </li>
-                        <li><a href="/loginProcess/logout">로그아웃</a></li>
+                        <li class="divide">
+                            <a id="mobilegnb-btn-mywv" href="javascript:loading_open_hreflink('https://my.worldvision.or.kr', '1');">
+                                마이월드비전
+                            </a>
+                        </li>
+                        <li><a id="mobilegnb-btn-logout" href="/loginProcess/logout">로그아웃</a></li>
                     </ul>
                 </div>
             </div>
@@ -174,45 +183,47 @@
                         <div class="visualImg-2 visualtem main-posit">
                             <img src="images/summerMain/worldVisionText.png" alt="worldvision">
                         </div>
-                        <a href="index.html"><div class="visualImg-3 visualtem">월드비전 • 2025 • 여름호</div></a>
+                        <a id="visual-link-summer2025" href="index.html">
+                            <div class="visualImg-3 visualtem">월드비전 • 2025 • 여름호</div>
+                        </a>
                         <div class="visualImg-4 visualtem">
                             <img src="images/summerMain/vol.png" alt="Vol.255">
                         </div>
                         
                         <ul class="visual-link">
                             <li class="main-link">
-                                <a href="specialStory.html">스페셜 스토리</a>
+                                <a id="visual-link-specialStory" href="specialStory.html">스페셜 스토리</a>
                                 <ul class="sub">
                                     <li>“반드시 돌아올게.” 25년을 품은 이름, 에꾸아무</li>
                                 </ul>
                             </li>
                             <li class="main-link">
-                                <a href="character.html">기획특집 : 75주년 인물</a>
+                                <a id="visual-link-character" href="character.html">기획특집 : 75주년 인물</a>
                                 <ul class="sub">
                                     <li>75년의 믿음, 사람을 키우다</li>
                                 </ul>
                             </li>
                             <li class="main-link">
-                                <a href="patron.html">후원자 이야기</a>
+                                <a id="visual-link-patron" href="patron.html">후원자 이야기</a>
                                 <ul class="sub">
                                     <li>80년의 진심, 나눔으로 이어갑니다</li>
                                 </ul>
                             </li>
                             <li class="main-link">
-                                <a href="participation.html">후원자 참여 이야기</a>
+                                <a id="visual-link-participation" href="participation.html">후원자 참여 이야기</a>
                                 <ul class="sub">
                                     <li>다양한 활동 속 지금을 살아가는 의미를 <br/>
                                         함께 생각하는 후원자 커뮤니티, “오렌지 농장”</li>
                                 </ul>
                             </li>
                             <li class="main-link">
-                                <a href="seagull.html">높이 나는 갈매기</a>
+                                <a id="visual-link-seagull" href="seagull.html">높이 나는 갈매기</a>
                                 <ul class="sub">
                                     <li>누군가의 버팀목이 되기까지 </li>
                                 </ul>
                             </li>
                             <li class="main-link">
-                                <a href="siteStory.html">현장 이야기</a>
+                                <a id="visual-link-siteStory" href="siteStory.html">현장 이야기</a>
                                 <ul class="sub">
                                     <li>자립은 혼자가 아닌 함께 하는 여정</li>
                                 </ul>
@@ -239,7 +250,7 @@
                             </picture>
                             <!-- 버튼 -->
                             <div class="btn02_area">
-                                <a href="specialStory.html" class="bunpil" id="content01-btn">
+                                <a href="specialStory.html" class="bunpil" id="main-btn-specialStory">
                                     <div class="btn02-item">
                                         김혜자 친선대사
                                     </div>
@@ -267,7 +278,7 @@
                                 </picture>
                                 <!-- 버튼 -->
                                 <div class="btn02_area">
-                                    <a href="character.html#section1" class="bunpil" id="content021-btn">
+                                    <a href="character.html#section1" class="bunpil" id="main-btn-character1">
                                         <div class="btn02-item">
                                             김충민 교장선생님
                                         </div>
@@ -281,7 +292,7 @@
                                 </picture>
                                 <!-- 버튼 -->
                                 <div class="btn02_area">
-                                    <a href="character.html#section2" class="bunpil" id="content022-btn">
+                                    <a href="character.html#section2" class="bunpil" id="main-btn-character2">
                                         <div class="btn02-item">
                                             오성삼 교수님
                                         </div>
@@ -295,7 +306,7 @@
                                 </picture>
                                 <!-- 버튼 -->
                                 <div class="btn02_area">
-                                    <a href="character.html#section3" class="bunpil" id="content023-btn">
+                                    <a href="character.html#section3" class="bunpil" id="main-btn-character3">
                                         <div class="btn02-item">
                                             양학선 선수
                                         </div>
@@ -326,7 +337,7 @@
                             </picture>
                             <!-- 버튼 -->
                             <div class="btn02_area">
-                                <a href="patron.html" class="bunpil" id="content03-btn">
+                                <a href="patron.html" class="bunpil" id="main-btn-patron">
                                     <div class="btn02-item">
                                         이성당 김현주 대표
                                     </div>
@@ -356,7 +367,7 @@
                                 </picture>
                                 <!-- 버튼 -->
                                 <div class="btn02_area">
-                                    <a href="participation.html#section1" class="bunpil" id="content041-btn">
+                                    <a href="participation.html#section1" class="bunpil" id="main-btn-participation1">
                                         <div class="btn02-item">
                                             영화 속 세상 보기
                                         </div>
@@ -369,13 +380,8 @@
                                     <img class="special-item ml" src="images/summerMain/participation2.png" alt="건강한 식습관 만들기 관련 이미지">
                                 </picture>
                                 <!-- 버튼 -->
-                                <!-- <div class="btn02_area">
-                                    <div class="btn02-item">
-                                        <a href="participation.html#section2" class="bunpil">건강한 식습관 만들기</a>
-                                    </div> 
-                                </div>   -->
                                 <div class="btn02_area">
-                                    <a href="participation.html#section2" class="bunpil" id="content042-btn">
+                                    <a href="participation.html#section2" class="bunpil" id="main-btn-participation2">
                                         <div class="btn02-item">
                                             건강한 식습관 만들기
                                         </div>
@@ -389,7 +395,7 @@
                                 </picture>
                                 <!-- 버튼 -->
                                 <div class="btn02_area">
-                                    <a href="participation.html#section3" class="bunpil" id="content043-btn">
+                                    <a href="participation.html#section3" class="bunpil" id="main-btn-participation3">
                                         <div class="btn02-item">
                                             사랑의도시락 봉사활동
                                         </div>
@@ -419,7 +425,7 @@
                             </picture>
                             <!-- 버튼 -->
                             <div class="btn02_area">
-                                <a href="seagull.html" class="bunpil" id="content05-btn">
+                                <a href="seagull.html" class="bunpil" id="main-btn-seagull">
                                     <div class="btn02-item">
                                         경찰 이영은씨 이야기
                                     </div>
@@ -449,7 +455,7 @@
                             </picture>
                             <!-- 버튼 -->
                             <div class="btn02_area">
-                                <a href="siteStory.html" class="bunpil" id="content06-btn">
+                                <a href="siteStory.html" class="bunpil" id="main-btn-siteStory">
                                     <div class="btn02-item">
                                         토크 콘서트 '함께 피다'
                                     </div>
@@ -467,7 +473,7 @@
                     <!-- 07 -->
                     <div class="content content-btn">
                         <div class="flexBox">
-                            <a href="campaign.html" id="campaign-btn">
+                            <a href="campaign.html" id="main-btn-campaign">
                                 <div class="btn-inner">
                                     <div class="btn-title fw-7">캠페인</div> 
                                     <div class="btnBtitle fw-7 txtPoint">
@@ -478,7 +484,7 @@
                                     </div>
                                 </div>
                             </a>
-                            <a href="news.html" id="content07-btn">
+                            <a href="news.html" id="main-btn-news">
                                 <div class="btn-inner">
                                     <div class="btn-title fw-7">새소식</div> 
                                     <div class="btnBtitle fw-7 txtPoint">
@@ -501,10 +507,10 @@
 
         <!-- page ctrl -->
         <div class="pagination">
-            <a id="homePage" href="index.html"><img src="images/common/homeButton.png" alt="월드비전 웹진 홈 바로가기"></a>
+            <a id="quickmenu-btn-home" href="index.html"><img src="images/common/homeButton.png" alt="월드비전 웹진 홈 바로가기"></a>
             <!-- <button id="prevPage"><img src="images/common/prevButton.png" alt="월드비전 웹진 이전 기사로 이동하기"></button> -->
-            <a id="nextPage" href="specialStory.html"><img src="images/common/nextButton.png" alt="월드비전 웹진 다음 기사로 이동하기"></a>
-            <a class="scroll-button" onclick="scrollToTop()" id="upPage"><img src="images/common/topButton.png" alt="월드비전 웹진 상단으로 이동하기"></a>
+            <a id="quickmenu-btn-next-specialStory" href="specialStory.html"><img src="images/common/nextButton.png" alt="월드비전 웹진 다음 기사로 이동하기"></a>
+            <a id="quickmenu-btn-top" class="scroll-button" onclick="scrollToTop()"><img src="images/common/topButton.png" alt="월드비전 웹진 상단으로 이동하기"></a>
         </div> <!-- //page ctrl -->
 
         <!-- 플로팅 버튼 -->
