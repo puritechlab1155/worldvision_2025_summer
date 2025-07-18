@@ -989,7 +989,7 @@
     }
     .news .content .description {
         max-width: none;
-        margin: auto;
+        /* margin: auto; */
     }
     #container .news .step .description.mid {
         margin: 0 auto;
