@@ -40,7 +40,10 @@
 
 
 @media only all and (max-width: 768px) {
-
+    /* 헤더 공백제거 */
+    #container.scroll_up {
+        padding-top: 0px;
+    }
     .campaign #header { position: unset; padding: 0 20px; }
     .campaign #header .header_wrap { height: 44px; width: auto;}
     .campaign #header .header_wrap .logo { width: 103px; height: 21px; margin: 0;}
@@ -275,11 +278,7 @@
 }
 
 
-@media (max-width: 768px) {
-    /* 헤더 공백제거 */
-    #container.scroll_up {
-        padding-top: 0px;
-    }
+@media (max-width: 767px) {
     /* 메인 페이지 */
     .main .mob {
         display: block;
@@ -915,7 +914,8 @@
     font-weight: 700;
 }
 .subType1 .title-wrapper .titleBg {
-    max-width: clamp(100px, 11vw, 200px);
+    max-width: clamp(150px, 11vw, 200px);
+    /* max-width: clamp(100px, 11vw, 200px); */
     width: 100%;
     margin: auto;
 }
