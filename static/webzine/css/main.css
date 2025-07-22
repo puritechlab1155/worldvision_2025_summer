@@ -768,7 +768,7 @@
     flex-direction: column;
     gap: 40px;
     padding: 40px;
-    border: 1.5px dashed #FF6B00;
+    border: 2px dashed #FF6B00;
     box-sizing: border-box;
     z-index: 0;
 }
